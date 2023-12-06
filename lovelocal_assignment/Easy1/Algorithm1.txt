@@ -1,0 +1,18 @@
+Algorithm1
+
+1)Start
+2)Initialize a 'Scanner' object to read input from the user.
+3)Prompt the user to enter a string.
+4)Read the entered string using the 'nextLine' method of the 'Scanner' class.
+5)Calculate Last Word Length:
+	*Define a method called 'lengthOfLastWord' that takes a string 's' as a parameter.
+	*Trim the input string 's' to remove leading and trailing spaces.
+	*Find the index of the last space in the trimmed string using lastIndexOf(' ').
+	*If no space is found (lastSpaceIndex is -1), return the length of the entire trimmed string.
+	*Otherwise, return the length of the last word, which is the difference between the length of the trimmed 	string and the index of the last space.
+6)Display Result:
+	*Call the lengthOfLastWord method with the user-entered string.
+	*Print the length of the last word.
+7)End:
+	*Close the Scanner to release resources
+

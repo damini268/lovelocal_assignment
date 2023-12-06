@@ -1,0 +1,20 @@
+Algorithm3
+
+1)Start:
+2)Initialize a variable 'count' to 0.
+3)Iterate through each number 'i' from 1 to 'n' (inclusive).
+	*Call a helper function 'countOnesInNumber(i)' to count the number of digit 1 in the current number 'i'.
+	*Add the result to the 'count' variable.
+4)End:
+
+5)Return the total count as the result.
+
+The helper function 'countOnesInNumber(num)':
+
+1)Initialize a variable 'count' to 0.
+2)While 'num' is greater than 0:
+	*If the last digit of 'num' is 1, increment the 'count'.
+	*Divide 'num' by 10 to move to the next digit.
+3)Return the final count.
+
+This algorithm counts the digit 1 for each number in the range from 1 to n and accumulates the counts to find the total number of digit 1 in all these numbers.

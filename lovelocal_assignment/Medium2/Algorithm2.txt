@@ -1,0 +1,21 @@
+Algorithm2
+
+1)Start:
+2)Initialize variables 'candidate1', 'candidate2' with counters 'count1', 'count2' as 0.
+3)Iterate through the array:
+	*If the current element is equal to 'candidate1', increment 'count1'.
+	*Else if the current element is equal to 'candidate2', increment 'count2'.
+	*Else if 'count1' is 0, set 'candidate1' to the current element and set 'count1' to 1.
+	*Else if 'count2' is 0, set 'candidate2' to the current element and set 'count2' to 1.
+	*Else decrement 'count1' and 'count2'.
+4)Reset 'count1' and 'count2' to 0.
+5)Iterate through the array again:
+	*If the current element is equal to 'candidate1', increment 'count1'.
+	*Else if the current element is equal to 'candidate2', increment 'count2'.
+6)Initialize an empty list 'result'.
+7)If 'count1' is greater than ⌊ n/3 ⌋, add 'candidate1' to 'result'.
+8)If 'count2' is greater than ⌊ n/3 ⌋ and 'candidate2' is not equal to 'candidate1', add 'candidate2' to 'result'.
+9)End:
+10)Return the list 'result' containing elements appearing more than ⌊ n/3 ⌋ times.
+
+This algorithm uses the Boyer-Moore Voting Algorithm to find potential candidates for majority elements, then validates the candidates in a second pass through the array. 
